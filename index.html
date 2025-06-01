@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios JavaScript</h1>
+        <table>
+            <tr>
+                <th>R.A</th>
+                <th>Nome</th>
+            </tr>
+            <tr>
+                <td>2025106253</td>
+                <td>Gustavo Pereira da Silva</td>
+            </tr>
+            <tr>
+                <td>*******</td>
+                <td>Arthur Campos Orosco</td>
+            </tr>
+        </table>
+    </header>
+
+    <main>
+        <section id="paragrafos">
+            <h2>10 Parágrafos</h2>
+            <button onclick="gerarParagrafos()">Gerar Parágrafos</button>
+            <div id="container-paragrafos"></div>
+        </section>
+
+        <section id="tabuada">
+            <h2>Tabuada</h2>
+            <label for="numero">Número (1-10):</label>
+            <input type="number" id="numero" min="1" max="10">
+            <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+            <div id="resultado-tabuada"></div>
+        </section>
+
+        <section id="notas">
+            <h2>Média de Notas</h2>
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" min="0" max="10" step="0.1">
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" min="0" max="10" step="0.1">
+            <label for="faltas">Faltas:</label>
+            <input type="number" id="faltas" min="0" max="80">
+            <button onclick="calcularMedia()">Calcular Média</button>
+            <div id="resultado-media"></div>
+        </section>
+
+        <section id="compras">
+            <h2>Lista de Compras</h2>
+            <label for="produto">Produto:</label>
+            <input type="text" id="produto">
+            <label for="preco">Valor:</label>
+            <input type="number" id="preco" min="0.01" step="0.01">
+            <button onclick="adicionarProduto()">Adicionar</button>
+            <button onclick="limparLista()">Limpar Lista</button>
+            <div id="lista-compras"></div>
+            <div id="total-compras">Total: R$ 0.00</div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
